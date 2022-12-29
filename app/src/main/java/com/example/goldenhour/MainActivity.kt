@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler().postDelayed(Runnable {
-            val intent = Intent(this@MainActivity, home::class.java)
+            val intent = Intent(this@MainActivity, DashboardHomeActivity::class.java)
             startActivity(intent)
             finish()
         }, 2000)
